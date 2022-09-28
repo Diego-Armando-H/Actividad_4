@@ -30,30 +30,20 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(0, QFormLayout.LabelRole, self.label)
 
-        self.lineEdit = QLineEdit(self.groupBox)
-        self.lineEdit.setObjectName(u"lineEdit")
-
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.lineEdit)
-
         self.label_2 = QLabel(self.groupBox)
         self.label_2.setObjectName(u"label_2")
 
         self.formLayout.setWidget(1, QFormLayout.LabelRole, self.label_2)
-
-        self.lineEdit_2 = QLineEdit(self.groupBox)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
-
-        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.lineEdit_2)
 
         self.label_3 = QLabel(self.groupBox)
         self.label_3.setObjectName(u"label_3")
 
         self.formLayout.setWidget(2, QFormLayout.LabelRole, self.label_3)
 
-        self.lineEdit_3 = QLineEdit(self.groupBox)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.txtVelocidad = QLineEdit(self.groupBox)
+        self.txtVelocidad.setObjectName(u"txtVelocidad")
 
-        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.lineEdit_3)
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.txtVelocidad)
 
         self.label_5 = QLabel(self.groupBox)
         self.label_5.setObjectName(u"label_5")
@@ -70,23 +60,40 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(5, QFormLayout.LabelRole, self.label_7)
 
-        self.spinBox_2 = QSpinBox(self.groupBox)
-        self.spinBox_2.setObjectName(u"spinBox_2")
-        self.spinBox_2.setMaximum(255)
+        self.spnnGreen = QSpinBox(self.groupBox)
+        self.spnnGreen.setObjectName(u"spnnGreen")
+        self.spnnGreen.setMaximum(255)
 
-        self.formLayout.setWidget(4, QFormLayout.FieldRole, self.spinBox_2)
+        self.formLayout.setWidget(4, QFormLayout.FieldRole, self.spnnGreen)
 
-        self.spinBox = QSpinBox(self.groupBox)
-        self.spinBox.setObjectName(u"spinBox")
-        self.spinBox.setMaximum(255)
+        self.spnnRed = QSpinBox(self.groupBox)
+        self.spnnRed.setObjectName(u"spnnRed")
+        self.spnnRed.setMaximum(255)
 
-        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.spinBox)
+        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.spnnRed)
 
-        self.spinBox_3 = QSpinBox(self.groupBox)
-        self.spinBox_3.setObjectName(u"spinBox_3")
-        self.spinBox_3.setMaximum(255)
+        self.spnnBlue = QSpinBox(self.groupBox)
+        self.spnnBlue.setObjectName(u"spnnBlue")
+        self.spnnBlue.setMaximum(255)
 
-        self.formLayout.setWidget(5, QFormLayout.FieldRole, self.spinBox_3)
+        self.formLayout.setWidget(5, QFormLayout.FieldRole, self.spnnBlue)
+
+        self.spnnDestinoX = QSpinBox(self.groupBox)
+        self.spnnDestinoX.setObjectName(u"spnnDestinoX")
+        self.spnnDestinoX.setMaximum(500)
+
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.spnnDestinoX)
+
+        self.spnnDestinoY = QSpinBox(self.groupBox)
+        self.spnnDestinoY.setObjectName(u"spnnDestinoY")
+        self.spnnDestinoY.setMaximum(500)
+
+        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.spnnDestinoY)
+
+        self.pushButton = QPushButton(self.groupBox)
+        self.pushButton.setObjectName(u"pushButton")
+
+        self.formLayout.setWidget(6, QFormLayout.SpanningRole, self.pushButton)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
@@ -111,5 +118,6 @@ class Ui_MainWindow(object):
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Red", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Green", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Blue", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
     # retranslateUi
 
